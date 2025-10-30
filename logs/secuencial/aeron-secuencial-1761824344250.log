@@ -1,0 +1,14 @@
+[2025-10-30 12:39:04] Iniciando simulación en modo: sequential
+[2025-10-30 12:39:04] Avión [IBE-001] INICIA ciclo
+[2025-10-30 12:39:04] Avión [IBE-001] solicita aterrizaje
+[2025-10-30 12:39:04] Avión [IBE-001] autorizado para aterrizar en Pista [R1]
+[2025-10-30 12:39:04] Avión [IBE-001] aterrizó en Pista [R1]
+[2025-10-30 12:39:04] Avión [IBE-001] se desplaza a Puerta [PUE1]
+[2025-10-30 12:39:04] Pasajeros se montan en Avión [IBE-001]
+[2025-10-30 12:39:04] Avión [IBE-001] finalizó en Puerta [PUE1]
+[2025-10-30 12:39:04] Avión [IBE-001] solicita despegue
+[2025-10-30 12:39:04] Avión [IBE-001] autorizado para despegar en Pista [R1]
+[2025-10-30 12:39:04] Avión [IBE-001] despegó de Pista [R1]
+[2025-10-30 12:39:04] Avión [IBE-001] ahora está en vuelo
+[2025-10-30 12:39:04] Avión [IBE-001] COMPLETÓ ciclo en 13 ms
+[2025-10-30 12:39:04] Cerrando registro

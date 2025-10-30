@@ -1,0 +1,38 @@
+[2025-10-30 12:40:21] Iniciando simulación en modo: sequential
+[2025-10-30 12:40:21] Avión [IBE-001] INICIA ciclo
+[2025-10-30 12:40:21] Avión [IBE-001] solicita aterrizaje
+[2025-10-30 12:40:21] Avión [IBE-001] autorizado para aterrizar en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-001] aterrizó en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-001] se desplaza a Puerta [PUE1]
+[2025-10-30 12:40:21] Pasajeros se montan en Avión [IBE-001]
+[2025-10-30 12:40:21] Avión [IBE-001] finalizó en Puerta [PUE1]
+[2025-10-30 12:40:21] Avión [IBE-001] solicita despegue
+[2025-10-30 12:40:21] Avión [IBE-001] autorizado para despegar en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-001] despegó de Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-001] ahora está en vuelo
+[2025-10-30 12:40:21] Avión [IBE-001] COMPLETÓ ciclo en 21 ms
+[2025-10-30 12:40:21] Avión [IBE-002] INICIA ciclo
+[2025-10-30 12:40:21] Avión [IBE-002] solicita aterrizaje
+[2025-10-30 12:40:21] Avión [IBE-002] autorizado para aterrizar en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-002] aterrizó en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-002] se desplaza a Puerta [PUE1]
+[2025-10-30 12:40:21] Pasajeros se montan en Avión [IBE-002]
+[2025-10-30 12:40:21] Avión [IBE-002] finalizó en Puerta [PUE1]
+[2025-10-30 12:40:21] Avión [IBE-002] solicita despegue
+[2025-10-30 12:40:21] Avión [IBE-002] autorizado para despegar en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-002] despegó de Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-002] ahora está en vuelo
+[2025-10-30 12:40:21] Avión [IBE-002] COMPLETÓ ciclo en 6 ms
+[2025-10-30 12:40:21] Avión [IBE-003] INICIA ciclo
+[2025-10-30 12:40:21] Avión [IBE-003] solicita aterrizaje
+[2025-10-30 12:40:21] Avión [IBE-003] autorizado para aterrizar en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-003] aterrizó en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-003] se desplaza a Puerta [PUE1]
+[2025-10-30 12:40:21] Pasajeros se montan en Avión [IBE-003]
+[2025-10-30 12:40:21] Avión [IBE-003] finalizó en Puerta [PUE1]
+[2025-10-30 12:40:21] Avión [IBE-003] solicita despegue
+[2025-10-30 12:40:21] Avión [IBE-003] autorizado para despegar en Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-003] despegó de Pista [R1]
+[2025-10-30 12:40:21] Avión [IBE-003] ahora está en vuelo
+[2025-10-30 12:40:21] Avión [IBE-003] COMPLETÓ ciclo en 5 ms
+[2025-10-30 12:40:21] Cerrando registro
