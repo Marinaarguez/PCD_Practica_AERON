@@ -88,3 +88,53 @@
 2025-11-04T20:48:54.903097900 - Avión AER006 en embarque.
 2025-11-04T20:48:54.905100900 - Solicitud de despegue recibida de AER006
 2025-11-04T20:48:54.907094600 - Avión AER006 ha despegado.
+2025-11-24T20:30:03.852475200 - Landing request received for AER001
+2025-11-24T20:30:03.867181200 - Landing request received for AER002
+2025-11-24T20:30:03.867181200 - Landing request received for AER003
+2025-11-24T20:30:03.870334200 - Landing request received for AER004
+2025-11-24T20:30:03.870334200 - Landing request received for AER005
+2025-11-24T20:30:03.879786 - Landing AER001 on Runway-1, assigned to Gate-1
+2025-11-24T20:30:03.887846500 - Avión AER001 en embarque.
+2025-11-24T20:30:03.891911300 - Takeoff request received for AER001
+2025-11-24T20:30:03.892918300 - Takeoff AER001 from Runway-2
+2025-11-24T20:30:03.894916200 - Landing AER002 on Runway-1, assigned to Gate-2
+2025-11-24T20:30:03.895909800 - Avión AER002 en embarque.
+2025-11-24T20:30:03.896908500 - Takeoff request received for AER002
+2025-11-24T20:30:03.897910500 - Takeoff AER002 from Runway-2
+2025-11-24T20:30:03.898914500 - Landing AER003 on Runway-1, assigned to Gate-2
+2025-11-24T20:30:03.899908900 - Avión AER003 en embarque.
+2025-11-24T20:30:03.902277900 - Takeoff request received for AER003
+2025-11-24T20:30:03.902277900 - Takeoff AER003 from Runway-2
+2025-11-24T20:30:03.904280800 - Landing AER004 on Runway-1, assigned to Gate-2
+2025-11-24T20:30:03.905281500 - Avión AER004 en embarque.
+2025-11-24T20:30:03.906282 - Takeoff request received for AER004
+2025-11-24T20:30:03.907290600 - Takeoff AER004 from Runway-2
+2025-11-24T20:30:03.909278600 - Landing AER005 on Runway-1, assigned to Gate-2
+2025-11-24T20:30:03.911279500 - Avión AER005 en embarque.
+2025-11-24T20:30:03.912281800 - Takeoff request received for AER005
+2025-11-24T20:30:03.913283 - Takeoff AER005 from Runway-2
+2025-11-24T20:45:35.363134700 - Petición de aterrizaje recibida para AER001
+2025-11-24T20:45:35.378822500 - Petición de aterrizaje recibida para AER002
+2025-11-24T20:45:35.380360600 - Petición de aterrizaje recibida para AER003
+2025-11-24T20:45:35.380360600 - Petición de aterrizaje recibida para AER004
+2025-11-24T20:45:35.381924400 - Petición de aterrizaje recibida para AER005
+2025-11-24T20:45:35.391916 - Aterrizando AER001 en Pista-1, asignado a Puerta-1
+2025-11-24T20:45:35.399805500 - Avión AER001 en embarque.
+2025-11-24T20:45:35.403988900 - Petición de despegue recibida para AER001
+2025-11-24T20:45:35.405989100 - Despegue de AER001 desde Pista-2
+2025-11-24T20:45:35.407985 - Aterrizando AER002 en Pista-1, asignado a Puerta-2
+2025-11-24T20:45:35.408989500 - Avión AER002 en embarque.
+2025-11-24T20:45:35.413989900 - Petición de despegue recibida para AER002
+2025-11-24T20:45:35.414989800 - Despegue de AER002 desde Pista-2
+2025-11-24T20:45:35.419426300 - Aterrizando AER003 en Pista-1, asignado a Puerta-2
+2025-11-24T20:45:35.420426600 - Avión AER003 en embarque.
+2025-11-24T20:45:35.422632900 - Petición de despegue recibida para AER003
+2025-11-24T20:45:35.425201300 - Despegue de AER003 desde Pista-2
+2025-11-24T20:45:35.427215400 - Aterrizando AER004 en Pista-1, asignado a Puerta-2
+2025-11-24T20:45:35.428221 - Avión AER004 en embarque.
+2025-11-24T20:45:35.429216200 - Petición de despegue recibida para AER004
+2025-11-24T20:45:35.430223100 - Despegue de AER004 desde Pista-2
+2025-11-24T20:45:35.432220700 - Aterrizando AER005 en Pista-1, asignado a Puerta-2
+2025-11-24T20:45:35.434107600 - Avión AER005 en embarque.
+2025-11-24T20:45:35.435097 - Petición de despegue recibida para AER005
+2025-11-24T20:45:35.437117 - Despegue de AER005 desde Pista-2

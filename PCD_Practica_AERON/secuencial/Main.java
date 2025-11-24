@@ -13,6 +13,9 @@ public class Main {
             scanner.nextLine();
         }
 
+        System.out.println("Iniciando simulación de tráfico aéreo...");
+        System.out.println("Se procesarán " + n + " aviones de forma secuencial.");
+
         Logger logger = new Logger("logs/aeron.log");
         FlightPanel panel = new FlightPanel();
         ControlTower tower = new ControlTower(panel, logger);
@@ -32,8 +35,10 @@ public class Main {
         }
 
         for (Airplane airplane : airplanes) {
+            System.out.println("Procesando aterrizaje para " + airplane.getId());
             tower.processNextLanding();
 
+            System.out.println("Pasajeros embarcando en " + airplane.getId());
             airplane.setState(AirplaneState.BOARDING);
             panel.update(airplane);
             logger.log("Avión " + airplane.getId() + " en embarque.");
@@ -42,10 +47,12 @@ public class Main {
                 p.checkFlight(airplane);
             }
 
+            System.out.println("Preparando despegue para " + airplane.getId());
             tower.receiveTakeOffRequest(airplane);
             tower.processNextTakeOff();
         }
 
-        System.out.println("Simulación completada.");
+        System.out.println("Todos los aviones han sido procesados.");
+        System.out.println("Fin de la simulación de tráfico aéreo.");
     }
 }

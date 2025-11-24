@@ -4,45 +4,76 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class ControlTower {
-    private Queue<Airplane> landingQueue = new LinkedList<>();
-    private Queue<Airplane> takeOffQueue = new LinkedList<>();
-    private FlightPanel panel;
-    private Logger logger;
+    private final Queue<Airplane> landingQueue;
+    private final Queue<Airplane> takeOffQueue;
+    private final Queue<String> runways;
+    private final Queue<String> gates;
+    private final FlightPanel panel;
+    private final Logger logger;
 
     public ControlTower(FlightPanel panel, Logger logger) {
         this.panel = panel;
         this.logger = logger;
+        this.landingQueue = new LinkedList<>();
+        this.takeOffQueue = new LinkedList<>();
+        this.runways = new LinkedList<>();
+        this.gates = new LinkedList<>();
+
+        for (int i = 1; i <= 2; i++)
+            runways.add("Pista-" + i);
+        for (int i = 1; i <= 2; i++)
+            gates.add("Puerta-" + i);
     }
 
     public void receiveLandingRequest(Airplane airplane) {
         landingQueue.add(airplane);
-        airplane.setState(AirplaneState.LANDING_ASSIGNED);
-        panel.update(airplane);
-        logger.log("Solicitud de aterrizaje recibida de " + airplane.getId());
+        logger.log("Petición de aterrizaje recibida para " + airplane.getId());
     }
 
     public void processNextLanding() {
-        if (!landingQueue.isEmpty()) {
-            Airplane airplane = landingQueue.poll();
-            airplane.setState(AirplaneState.LANDING);
+        if (landingQueue.isEmpty())
+            return;
+
+        Airplane airplane = landingQueue.poll();
+        if (!runways.isEmpty() && !gates.isEmpty()) {
+            String runway = runways.poll();
+            String gate = gates.poll();
+
+            System.out.println("Asignando pista y puerta a " + airplane.getId());
+            logger.log("Aterrizando " + airplane.getId() + " en " + runway + ", asignado a " + gate);
+            airplane.setState(AirplaneState.AT_GATE);
             panel.update(airplane);
-            logger.log("Avión " + airplane.getId() + " ha aterrizado.");
+
+            runways.add(runway);
+        } else {
+            System.out.println("No hay recursos disponibles para el aterrizaje de " + airplane.getId());
+            logger.log("No hay recursos disponibles para el aterrizaje de " + airplane.getId());
         }
     }
 
     public void receiveTakeOffRequest(Airplane airplane) {
         takeOffQueue.add(airplane);
-        airplane.setState(AirplaneState.TAKING_OFF_REQUESTED);
-        panel.update(airplane);
-        logger.log("Solicitud de despegue recibida de " + airplane.getId());
+        logger.log("Petición de despegue recibida para " + airplane.getId());
     }
 
     public void processNextTakeOff() {
-        if (!takeOffQueue.isEmpty()) {
-            Airplane airplane = takeOffQueue.poll();
-            airplane.setState(AirplaneState.DEPARTING);
+        if (takeOffQueue.isEmpty())
+            return;
+
+        Airplane airplane = takeOffQueue.poll();
+        if (!runways.isEmpty()) {
+            String runway = runways.poll();
+
+            System.out.println("Avión " + airplane.getId() + " despegando desde " + runway);
+            logger.log("Despegue de " + airplane.getId() + " desde " + runway);
+            airplane.setState(AirplaneState.IN_AIR);
             panel.update(airplane);
-            logger.log("Avión " + airplane.getId() + " ha despegado.");
+
+            runways.add(runway);
+            gates.add("Puerta-" + (gates.size() + 1));
+        } else {
+            System.out.println("No hay pista disponible para el despegue de " + airplane.getId());
+            logger.log("No hay pista disponible para el despegue de " + airplane.getId());
         }
     }
 }

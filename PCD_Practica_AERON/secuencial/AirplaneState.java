@@ -6,5 +6,9 @@ public enum AirplaneState {
     LANDING, // Aterrizando
     BOARDING, // Embarcando
     TAKING_OFF_REQUESTED, // Despegue solicitado
-    DEPARTING // Despegando
+    DEPARTING, // Despegando
+    IN_AIR, // En el aire
+    ON_RUNWAY, // En pista
+    AT_GATE;// En puerta
+
 }
